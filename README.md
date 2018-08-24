@@ -1,4 +1,4 @@
-# Example Implementation – Stream, AWS SQS, Lambda, and SNS
+# Example – Stream, AWS SQS, Lambda, and SNS
 
 To use this repo, you'll first want to read the tutorial: https://getstream.io/blog/using-the-stream-real-time-firehose-with-aws-sqs-lambda-and-sns.
 
