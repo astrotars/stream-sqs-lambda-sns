@@ -3,9 +3,6 @@ const AWS = require('aws-sdk');
 const sns = new AWS.SNS();
 const moment = require('moment');
 
-// Setup promises
-AWS.config.setPromisesDependency(null);
-
 exports.handler = async (event, context, callback) => {
 	// Parse incoming event payload
 	const payload = JSON.parse(event.Records[0].body)[0].new[0];
@@ -25,8 +22,8 @@ exports.handler = async (event, context, callback) => {
 	const cache = {
 		actors: ['Nick'],
 		verbs: {
-			tweet: 'tweeted',
-		},
+			tweet: 'tweeted'
+		}
 	};
 
 	const actor = cache.actors[0]; // Hardcoding user, should be a database lookup
@@ -37,7 +34,7 @@ exports.handler = async (event, context, callback) => {
 	// Build params
 	const params = {
 		Message: `${actor} ${verb} "${tweet}" on ${time}`,
-		TopicArn: process.env.AWS_SNS_TOPIC_ARN,
+		TopicArn: process.env.AWS_SNS_TOPIC_ARN
 	};
 
 	// Send a SMS via AWS SNS
