@@ -1,2 +1,15 @@
-# stream-sqs-lambda-sns
-Stream -> SQS -> Lambda -> SNS
+# Example Implementation of GetStream.io, AWS SQS, AWS Lambda, and AWS SNS
+
+AWS_ENVIRONMENT=development<br/>
+AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID<br/>
+AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY<br/>
+AWS_ROLE_ARN=YOUR_AWS_ROLE_ARN<br/>
+AWS_SNS_TOPIC_ARN=YOUR_AWS_SNS_TOPIC_ARN<br/>
+AWS_REGION=us-east-1<br/>
+AWS_FUNCTION_NAME=STREAM<br/>
+AWS_HANDLER=index.handler<br/>
+AWS_MEMORY_SIZE=128<br/>
+AWS_TIMEOUT=30<br/>
+AWS_RUNTIME=nodejs8.10<br/>
+EXCLUDE_GLOBS="event.json"<br/>
+PACKAGE_DIRECTORY=build
