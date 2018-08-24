@@ -3,6 +3,7 @@
 To use this repo, you'll first want to read the tutorial: https://getstream.io/blog/using-the-stream-real-time-firehose-with-aws-sqs-lambda-and-sns.
 
 ## Environment Variables
+```
 AWS_ENVIRONMENT=development<br/>
 AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID<br/>
 AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY<br/>
@@ -16,6 +17,7 @@ AWS_TIMEOUT=30<br/>
 AWS_RUNTIME=nodejs8.10<br/>
 EXCLUDE_GLOBS="event.json"<br/>
 PACKAGE_DIRECTORY=build
+```
 
 ## Testing
 
